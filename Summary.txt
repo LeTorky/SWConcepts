@@ -1,0 +1,61 @@
+Design Patterns:
+They are patterns that are used to make code reusable, less coupled,
+more cohesive and decrease refactoring for changes.
+
+Creational Patterns:
+Patterns that address the creation of an object.
+
+Structural Patterns:
+Patterns that deal with entities that are structured of multiple objects
+and treated as on.
+
+Behavioral Patterns:
+Patterns that address dividing responsibilties between objects.
+
+Similar Patterns and their key differences:
+Factory.
+Abstract Factory => Multiple constructors.
+Builder => Divides construction into methods and needs a Director class.
+Singleton => Constructor is private and encapsulated in a conditional method.
+Prototype => Parametrized constructor (same class type) used in a method and
+passes this.
+
+Bridge => Bridge interface is created prehand and aggregates multiple classes.
+Adapter => Adapter implements business interface and utilizes a single service
+class.
+Facade => Interface aggergates multiple services with a composition relationship.
+Flyweight => Two Interfaces hold dependant information to decrease memory usage,
+one of them contains data that is reusable by multiple instaces of the other.
+Visitor => Interface has methods that utilize another interface to run specific
+logic, each method utilizes a specific concrete class, instead of making the
+interface decide which method to use, the concrete classes have a method that
+uses proper method.
+
+Composite => Interface that aggregates its same type and another that does not,
+the aggregator delegates to its components.
+Decorator => Interface aggregates multiple levels each adding a layer of logic
+and the base doesn't call another level.
+ChainOfResponsibility => Interface aggregates multiple instances of its type
+each level holds specific logic and can early exit from the chain.
+Proxy => Interface aggergates the base class in a single level and adds extra
+logic.
+Command => Interface aggregates an editor which contains multiple logic, the
+interface contains state aswell and finally a sender aggregates this interface,
+thus we have uncoupled the business from the sender.
+
+Iterator => Constructed by the Datastructure interface and references the same
+datastructure class.
+Mediator => Interface aggeragating multiple instances of another interface that
+references the mediator aswell to communicate with each other.
+Observer => Interface aggregating multiple instances interested in an event.
+State => Interface aggregating a state and utilizing it, this state references
+the main interface to change its state if needed.
+Strategy => Interface aggregating a strategy interface and can set it to a
+different kind if needed.
+Memento => Interface creates an instance of the memento interface that aggregates
+an instance of itself with its current state, the memento references the main
+interface to set its state back to the saved state.
+
+Template => Interface with divided logic onto multiple methods some have default
+implementations other require overriding, each concrete class defines custom
+implementation.
